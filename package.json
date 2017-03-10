@@ -1,0 +1,32 @@
+{
+  "name": "jsfba",
+  "version": "0.0.1",
+  "description": "JsFBA is a JavaScript and NodeJs flux-balance-analysis module, that allows you to build models from genomes, gapfill models, and run flux-balance-analysis on that model.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist/ && babel src -d dist",
+    "watch": "babel src -d lib -w &",
+    "start": "npm run watch && nodemon -L --debug --es_staging"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divya1694/JsFBA.git"
+  },
+  "author": "Divya Rai",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "~6.14.0",
+    "babel-plugin-syntax-async-functions": "~6.13.0",
+    "babel-plugin-syntax-object-rest-spread": "~6.13.0",
+    "babel-plugin-transform-async-to-generator": "~6.8.0",
+    "babel-plugin-transform-es2015-destructuring": "~6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "~6.14.0",
+    "babel-plugin-transform-es2015-parameters": "~6.11.0",
+    "babel-plugin-transform-object-rest-spread": "~6.8.0",
+  },
+  "bugs": {
+    "url": "https://github.com/divya1694/JsFBA/issues"
+  },
+  "homepage": "https://github.com/divya1694/JsFBA#readme"
+}
